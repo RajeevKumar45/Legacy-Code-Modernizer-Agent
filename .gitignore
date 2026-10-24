@@ -1,0 +1,15 @@
+# Project-wide ignore rules. backend/ and frontend/ have their own .gitignore files too.
+
+# Secrets: environment files often hold API keys and passwords
+.env
+.env.*
+!.env.example
+
+# Compiled Java output
+*.class
+
+# Dependencies and virtual environments, wherever they appear
+node_modules/
+.venv/
+venv/
+__pycache__/

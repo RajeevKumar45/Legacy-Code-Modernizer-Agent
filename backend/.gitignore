@@ -1,0 +1,5 @@
+# Local virtual environment (rebuilt from requirements.txt, never committed)
+.venv/
+
+# Python bytecode cache
+__pycache__/

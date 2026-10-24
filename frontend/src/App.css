@@ -1,0 +1,84 @@
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.intro {
+  margin-bottom: 48px;
+}
+
+.intro p {
+  max-width: 640px;
+  font-size: 1.125rem;
+}
+
+/* Four cards that wrap onto new rows on narrow screens */
+.stages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.stage {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  background: var(--card-bg);
+}
+
+.stage h3 {
+  margin: 12px 0 8px;
+  color: var(--text-h);
+}
+
+.stage p {
+  margin: 0;
+}
+
+.stage-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-text);
+  font-weight: 600;
+}
+
+/* Backend status box. The colored left border shows the state at a glance;
+   the text always says the state too, so color is never the only signal. */
+.health {
+  border: 1px solid var(--border);
+  border-left-width: 6px;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 48px;
+  background: var(--card-bg);
+}
+
+.health h2 {
+  font-size: 1.125rem;
+  margin: 0 0 4px;
+}
+
+.health p {
+  margin: 0;
+}
+
+.health-loading {
+  border-left-color: var(--border);
+}
+
+.health-connected {
+  border-left-color: var(--ok);
+}
+
+.health-error {
+  border-left-color: var(--error);
+}
